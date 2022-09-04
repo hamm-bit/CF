@@ -3,13 +3,13 @@
 using namespace std;
 #define ll long long
 const int mxN = 5e5+5;
-int t, n, keep, p, b, ans[mxN];
+int t, n, p, b, ans[mxN];
 
 int main() {
     ios::sync_with_stdio(false);cin.tie(NULL);
+    cin >> t;
     vector<pair<int, int>> m[mxN];
     priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> v;
-    cin >> t;
     for (;t--;) {
         cin >> n;
         for (int i=1; i<n; i++) m[i].clear();
